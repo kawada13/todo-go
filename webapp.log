@@ -4,3 +4,5 @@
 2022/03/15 22:16:35 main.go:15: test
 2022/03/15 22:30:38 test
 2022/03/15 22:43:56 main.go:15: test
+2022/03/15 23:18:09 base.go:37: near "EXIST": syntax error
+2022/03/15 23:20:00 base.go:37: near "FULL": syntax error
