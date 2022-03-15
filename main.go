@@ -10,4 +10,6 @@ func main() {
 	fmt.Println(config.Config.SQLDriver)
 	fmt.Println(config.Config.Dbname)
 	fmt.Println(config.Config.LogFile)
+
+	// log.Println("test")
 }
