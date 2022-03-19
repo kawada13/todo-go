@@ -39,7 +39,6 @@ func init() {
 }
 
 // uuidを生成
-
 func createUUID() (uuidobj uuid.UUID) {
 	uuidobj, _ = uuid.NewUUID()
 
@@ -47,7 +46,6 @@ func createUUID() (uuidobj uuid.UUID) {
 }
 
 // パスワードをハッシュ化
-
 func Encrpt(plaintext string) (crytext string) {
 	crytext = fmt.Sprintf("%x", sha1.Sum([]byte(plaintext)))
 

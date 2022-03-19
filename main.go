@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"log"
 	"todo_app/app/models"
 )
 
@@ -15,12 +16,21 @@ func main() {
 
 	// fmt.Println(models.Db)
 
-	u := &models.User{}
-	u.Name = "test"
-	u.Email = "test@examle.com"
-	u.PassWord = "testtest"
+	// u := &models.User{}
+	// u.Name = "test"
+	// u.Email = "test@examle.com"
+	// u.PassWord = "testtest"
+
+	// fmt.Println(u)
+
+	// u.CreateUser()
+
+	u, err := models.GetUser(1)
+
+	if err != nil {
+		log.Fatalln(err)
+	}
 
 	fmt.Println(u)
 
-	u.CreateUser()
 }
