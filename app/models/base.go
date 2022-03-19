@@ -32,9 +32,7 @@ func init() {
 		password STRING
 		created_at DATETIME)`, tableNameUser)
 
-	_, err = Db.Exec(cmdU)
-	if err != nil {
-		log.Println(err)
-	}
-
+	Db.Exec(cmdU)
 }
+
+// usersテーブルを作成している
