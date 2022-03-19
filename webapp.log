@@ -6,3 +6,7 @@
 2022/03/15 22:43:56 main.go:15: test
 2022/03/15 23:18:09 base.go:37: near "EXIST": syntax error
 2022/03/15 23:20:00 base.go:37: near "FULL": syntax error
+2022/03/19 23:36:35 users.go:34: near "values": syntax error
+2022/03/19 23:37:40 users.go:34: table users has no column named created_at
+2022/03/19 23:38:41 users.go:34: table users has no column named created_at
+2022/03/19 23:59:12 users.go:34: table users has no column named created_at
