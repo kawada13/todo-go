@@ -25,11 +25,40 @@ func main() {
 
 	// u.CreateUser()
 
+	// u, err := models.GetUser(1)
+
+	// if err != nil {
+	// 	log.Fatalln(err)
+	// }
+
+	// fmt.Println(u)
+
+	// u.Name = "Test3sss3"
+	// u.Email = "test2@test.com"
+
+	// u.UpdateUser()
+
+	// u, _ = models.GetUser(1)
+
+	// u.DeleteUser()
+
+	// u, _ = models.GetUser(1)
+
+	// if err != nil {
+	// 	log.Fatalln(err)
+	// }
+
+	// fmt.Println(u)
+
 	u, err := models.GetUser(1)
 
 	if err != nil {
 		log.Fatalln(err)
 	}
+
+	u.DeleteUser()
+
+	u, _ = models.GetUser(1)
 
 	fmt.Println(u)
 

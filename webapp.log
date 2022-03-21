@@ -10,3 +10,4 @@
 2022/03/19 23:37:40 users.go:34: table users has no column named created_at
 2022/03/19 23:38:41 users.go:34: table users has no column named created_at
 2022/03/19 23:59:12 users.go:34: table users has no column named created_at
+2022/03/21 23:36:48 users.go:49: near "where": syntax error

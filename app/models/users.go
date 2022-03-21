@@ -38,6 +38,34 @@ func (u *User) CreateUser() (err error) {
 	return err
 }
 
+// ユーザーの更新
+
+func (u User) UpdateUser() (err error) {
+	cmd := `update users set name = ?, email = ? where id = ?`
+
+	_, err = Db.Exec(cmd, u.Name, u.Email, u.ID)
+
+	if err != nil {
+		log.Fatalln(err)
+	}
+
+	return err
+}
+
+//　ユーザーの削除
+
+func (u *User) DeleteUser() (err error) {
+	cmd := `delete from users where id = ?`
+
+	_, err = Db.Exec(cmd, u.ID)
+
+	if err != nil {
+		log.Fatalln(err)
+	}
+
+	return err
+}
+
 // ユーザーを取得
 func GetUser(id int) (user User, err error) {
 	user = User{}
